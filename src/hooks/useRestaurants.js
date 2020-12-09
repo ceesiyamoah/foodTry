@@ -18,7 +18,7 @@ export default () => {
 	};
 
 	useEffect(() => {
-		fetchData('pizza');
+		fetchData('pasta');
 	}, []);
 
 	return [results, errorMessage, fetchData];

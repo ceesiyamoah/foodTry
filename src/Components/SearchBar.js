@@ -22,9 +22,9 @@ const styles = StyleSheet.create({
 	searchBarContainer: {
 		flexDirection: 'row',
 		borderRadius: 5,
-		backgroundColor: '#f0eeee',
-		marginHorizontal: 10,
-		marginTop: 10,
+		backgroundColor: '#dae6ed',
+		margin: 10,
+
 		height: 50,
 	},
 	textInputStyle: {
