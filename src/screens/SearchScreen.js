@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import ResultDetails from '../components/ResultDetails';
+import { Text, ScrollView } from 'react-native';
 import ResultList from '../components/ResultList';
 import SearchBar from '../components/SearchBar';
 import useRestaurants from '../hooks/useRestaurants';
@@ -35,33 +34,9 @@ const SearchScreen = () => {
 					restaurants={filterResultsByPrice(2, 3)}
 				/>
 				<ResultList title='Big Spender' restaurants={filterResultsByPrice(4)} />
-				<ResultList
-					title='Cost Effective'
-					restaurants={filterResultsByPrice(1)}
-				/>
-				<ResultList
-					title='Bit Pricey'
-					restaurants={filterResultsByPrice(2, 3)}
-				/>
-				<ResultList title='Big Spender' restaurants={filterResultsByPrice(4)} />
-				<ResultList
-					title='Cost Effective'
-					restaurants={filterResultsByPrice(1)}
-				/>
-				<ResultList
-					title='Bit Pricey'
-					restaurants={filterResultsByPrice(2, 3)}
-				/>
-				<ResultList title='Big Spender' restaurants={filterResultsByPrice(4)} />
 			</ScrollView>
 		</>
 	);
 };
-
-const styles = StyleSheet.create({
-	text: {
-		marginLeft: 10,
-	},
-});
 
 export default SearchScreen;
